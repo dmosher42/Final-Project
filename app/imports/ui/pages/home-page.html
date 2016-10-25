@@ -1,14 +1,30 @@
 <template name="Home_Page">
-  <div class="ui middle aligned centered grid text container">
+  <div class="ui middle aligned centered three grid text container">
 
-    <div class="four wide column">
-      <img class="ui small circular image" src="/images/meteor-logo.png"/>
+    <div class="two wide column">
+      <img class="ui small image" src="/images/alloy.png"/>
     </div>
 
+    {{#if currentUser}}
     <div class="eight wide column">
-      <h1>Welcome to this template</h1>
-      <p>Now get to work and modify this app!</p>
+      <h1>Welcome to Alloy</h1>
+      <p>You are logged in</p>
     </div>
 
+    {{else}}
+    <div class="eight wide column">
+      <h1>Welcome to Alloy</h1>
+      <p>Alloy is a social network oriented that connects people to projects based on the “skill graph,” allowing like-minded people with complementing skills to find each other and work on projects together.</p>
+    </div>
+    {{/if}}
+
+    <div class="four wide column raised">
+      <h3>Featured Projects</h3>
+      <p>Project</p>
+      <p>Project</p>
+      <p>Project</p>
+      <p>Project</p>
+      <p>Project</p>
+    </div>
   </div>
 </template>
